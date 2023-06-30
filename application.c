@@ -97,8 +97,6 @@ void my_pay();
 void cancelreservation();
 void process();
 void ticket_printing();
-void billing();
-void schedule();
 void end();
 
 int main() {
@@ -244,7 +242,7 @@ void createaccount() {
 
     createpassword();
 
-    fp = fopen("C:\\Details_Customer\\User.txt", "wb+");
+    fp = fopen("./User.txt", "wb+");
     if (fp == NULL) {
         printf("\nError opened file\n");
         exit(1);
